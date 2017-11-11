@@ -2,7 +2,7 @@
 
 (c) 2017 David Reed, distributed under the MIT License.
 
-This plugin provides a configurable way to swap between source files and corresponding test classes in Sublime Text 3. Invoke it while viewing a source file to tab to the corresponding test file, or vice versa, by choosing Test Switcher from the command palette or pressing Control-Shift-Insert (Linux and Windows) or Command-Shift-Insert (Mac). Test Switcher scans open tabs first for matching files and then walks the directory tree for your open folders.
+This plugin provides a configurable way to swap between source files and corresponding test classes in Sublime Text 3. Invoke it while viewing a source file to tab to the corresponding test file, or vice versa, by choosing Test Switcher from the command palette or pressing Control-Shift-Insert (Linux and Windows) or Command-Shift-\ (Mac). Test Switcher scans open tabs first for matching files and then walks the directory tree for your open folders.
 
 The plugin can be configured to find tests using many different naming conventions. It matches on basename (file name minus extension) as well as on extension. To configure basename matching, in the plugin's settings, supply a list for `prefixes` and `suffixes`. These will be added to the source file base name to locate possible test class files, and will be matched against the head and tail of open files to locate the source files corresponding to tests. The default configuration looks for prefixes `["test", "test_"]` and suffixes `["test", "_test", ".spec"]`. Hence, a source file named `Base.py` would match to a test file named `TestBase.py`, `Test_Base.py`, `Base_test.py`, `BaseTest.py`, or `Base.spec.py`, and vice versa. Note that matching is case-insensitive on all platforms.
 
