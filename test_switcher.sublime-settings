@@ -1,0 +1,4 @@
+{
+	"prefixes": ["test", "test_"],
+	"suffixes": ["test", "_test", ".spec"]
+}

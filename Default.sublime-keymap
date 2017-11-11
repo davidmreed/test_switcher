@@ -1,0 +1,6 @@
+[
+	{ 
+		"keys": ["shift+ctrl+insert"], 
+		"command": "test_switcher"
+	}
+]
